@@ -2,7 +2,7 @@ from Scripts import create_customer, end_test,delete_customer, edit_other_order,
 
 def main(username, password):
     #open the website
-    start_browser("")
+    start_browser('https://apex.vvanhecke.be/ords/r/studenten/demonstration-customer-orders/home?session=11263511317481')
     login(username, password)
     create_product('Trojan-Horse', 10, 'Available', 'Files\\download', 'Files\\download')
     create_product('SQL Slammer', 5, 'Out of Stock', 'Files\\download', 'Files\\download')

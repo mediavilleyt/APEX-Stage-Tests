@@ -5,10 +5,10 @@ import time
 # Start browser
 #-------------------------
 
-def start_browser(type):
+def start_browser(URL):
     start_test("Starting browser...")
     try:
-        browser.get('https://apex.vvanhecke.be/ords/r/studenten/demonstration-customer-orders/home?session=11263511317481')
+        browser.get(URL)
         print_info("Connected to site", "0")
         browser.maximize_window()
         print_info("Window Maximized", "0")
