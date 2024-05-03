@@ -61,6 +61,14 @@
 
 ### Documentation RobotFramework Code
 
+[Robot Framework Documentation](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
+
+| File name | Description |
+|-----------|-------------|
+| admin.robot | Tries to add products to the website as an admin |
+| order_test.robot | Tries to add a customer, gives him an order, then deletes everything |
+| order1.robot | Does the same as order_test.robot but for a different order page |
+
 ## Week 3 
 >[!Note]
 > This folder contains tests for APEX Office Edit
