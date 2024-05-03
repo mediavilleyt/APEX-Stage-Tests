@@ -68,7 +68,7 @@
 > [!IMPORTANT]  
 > These tests are incomplete
 
-## Students that worked on this
+## Contributors
 
 * Jonas Devadder
 * Keanu Van Acker
