@@ -2,7 +2,7 @@
  
 ## Week 1
 >[!Note]
->Deze folder bevat alle tests die nog niet aangemaakt waren voor Apex Office Print
+> This folder contains all tests that have not yet been created for Apex Office Print
 
 1. DOCX
    - Attach
@@ -176,12 +176,12 @@
 
 ## Week 3 
 >[!Note]
->Deze folder bevat tests voor APEX Office Edit
+> This folder contains tests for APEX Office Edit
 
 > [!IMPORTANT]  
-> Deze tests zijn niet compleet
+> These tests are incomplete
 
-## Studenten
+## Students that worked on this
 
 * Jonas Devadder
 * Keanu Van Acker
