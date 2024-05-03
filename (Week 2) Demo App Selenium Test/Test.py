@@ -1,0 +1,38 @@
+from Scripts import create_customer, end_test,delete_customer, edit_other_order, login, delete_other_order,create_other_order,delete_store,start_browser, create_product, delete_product, create_order, delete_order, delete_product, create_store
+
+def main(username, password):
+    #open the website
+    start_browser("")
+    login(username, password)
+    create_product('Trojan-Horse', 10, 'Available', 'Files\\download', 'Files\\download')
+    create_product('SQL Slammer', 5, 'Out of Stock', 'Files\\download', 'Files\\download')
+    create_store('Hegberts Ponytails', 'www.hegbertsponytails.com', 'Hegbert', '45.369440', '-96.056060', 'Files\\download')
+    create_store("Jeff's CPU Hardware", "www.jeffscpuhardware.com", "Jeff", "45.369440", "-96.056060", "Files\\download")
+    create_customer('Jonas Devadder', 'JonasIsBestApexIntern@monkeymail.com')
+    create_customer('Keanu Van Acker', 'kva@belastingenzijnkak.be')
+    # create_order('Jonas', 'COMPLETE', "Hegbert's Ponytails", '1', 'Trojan-Horse', '10,99', '20')
+    # create_order('Keanu', 'CANCELLED', "Hegbert's Ponytails", '1', 'Trojan-Horse', '10,99', '20')
+    # create_order('Keanu', 'REFUNDED', "Jeff's CPU Hardware", '1', 'SQL Slammer', '10,99', '20')
+    create_other_order('Jonas Devadder', 'COMPLETE', 'Online')
+    edit_other_order('Jonas Devadder', 'Trojan-Horse', '10,99', '20')
+    create_other_order('Keanu Van Acker', 'CANCELLED', 'Online')
+    edit_other_order('Keanu Van Acker', 'Trojan-Horse', '10,99', '20')
+    create_other_order('Keanu Van Acker', 'REFUNDED', 'Online')
+    edit_other_order('Keanu Van Acker', 'SQL Slammer', '10,99', '20')
+    delete_other_order('Jonas Devadder')
+    delete_other_order('Keanu Van Acker')
+    delete_other_order('Keanu Van Acker')
+    delete_order('Jonas Devadder')
+    delete_order('Keanu Van Acker')
+    delete_order('Keanu Van Acker')
+    delete_product('Trojan-Horse')
+    delete_product('SQL Slammer')
+    delete_store("Hegbert's Ponytails")
+    delete_store("Jeff's CPU Hardware")
+    delete_customer('Jonas Devadder')
+    delete_customer('Keanu Van Acker')
+    end_test()
+ 
+main('KEANU', 'demo2024')
+
+# main('JONAS','kuZ5Zbmn_yXwB3F')
