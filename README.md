@@ -181,3 +181,9 @@
 > [!IMPORTANT]  
 > Deze tests zijn niet compleet
 
+## Studenten
+
+* Jonas Devadder
+* Keanu Van Acker
+* Jarno Hennes
+* Marie Remory
