@@ -68,6 +68,31 @@
 > [!IMPORTANT]  
 > These tests are incomplete
 
+### Apex Office Edit Testing
+
+Welcome to the testing repository for [APEX Office Edit](https://apex.vvanhecke.be/ords/f?p=131:100:9521489571363).
+
+This repository contains Robot Framework tests written in Python for ensuring the functionality and reliability of the website.
+
+#### Prerequisites
+Before running the tests, ensure you have the following installed:
+
+* Python
+* To check if u have python installed run `python --version`
+* Robot Framework
+* Getting Started
+
+#### To execute the tests, follow these steps:
+* Clone this repository to your local machine.
+`git clone https://github.com/mediavilleyt/AOE-RobotFramework`
+* Open command prompt or in Visual Studo Code open the terminal
+* Navigate to the directory where the repository is cloned. ```CD: your/path/here```
+* Run the following command to execute the tests:
+`robot --outputdir results file.robot`
+
+If the above command doesn't work, you can also use `python -m robot -d results file.robot`
+
+
 ## Contributors
 
 * Jonas Devadder
