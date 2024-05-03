@@ -2,7 +2,7 @@
  
 ## Week 1
 >[!Note]
->Deze folder bevat alle tests die nog niet aangemaakt waren voor Apex Office Print
+> This folder contains all tests that have not yet been created for Apex Office Print
 
 1. DOCX
    - Attach
@@ -60,124 +60,50 @@
 | <br><pre lang="python">end_test()</pre> | Ends the test session and closes the browser. | None | None |
 
 ### Documentation RobotFramework Code
->Admin.robot
 
-| Test Cases                               | Description                                                                                           |
-|------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Open login page                          | Opens the browser to the login page of the web application.                                            |
-| Input name and password                  | Inputs the username and password on the login page.                                                    |
-| Click login                              | Clicks the login button on the login page.                                                             |
-| Open Navigation on Home Page             | Opens the navigation menu on the home page.                                                            |
-| Click on admin link                      | Opens the admin tab from the navigation menu.                                                          |
-| Go to product page                       | Navigates to the products page within the admin section.                                               |
-| Click button create                      | Opens the create product dialog on the products page.                                                   |
-| Click the delete button                  | Deletes a customer on the edit page.                                                                   |
+[Robot Framework Documentation](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
 
-| Keywords                                 | Description                                                                                           |
-|------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Screenshot                               | Captures a screenshot of the current page.                                                             |
-| Open Browser                             | Opens the browser and navigates to the specified URL.                                                  |
-| Input Text                               | Inputs text into a specified field.                                                                    |
-| Click Button                             | Clicks on a specified button.                                                                         |
-| Wait Until Element Is Visible            | Waits until the specified element is visible.                                                          |
-| Capture Page Screenshot                  | Captures a screenshot of the current page.                                                             |
-| Execute JavaScript                       | Executes JavaScript code.                                                                             |
-| Select Frame                             | Switches to the specified iframe.                                                                     |
-| Unselect Frame                           | Switches back to the default content from an iframe.                                                   |
-| Sleep                                    | Pauses the test execution for a specified duration.                                                    |
-
-<hr>
-
-> order_test.robot
-
-| Test Cases                               | Description                                                                                           |
-|------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Open login page                          | Opens the browser to the login page of the web application.                                            |
-| Input name and password                  | Inputs the username and password on the login page.                                                    |
-| Click login                              | Clicks the login button on the login page.                                                             |
-| Open Navigation on Home Page             | Opens the navigation menu on the home page.                                                            |
-| Click on Customers link on Home Page     | Clicks on the Customers link in the navigation on the home page.                                        |
-| Open customer page                       | Opens the create customer page.                                                                        |
-| Create new customer                      | Fills in the form to create a new customer.                                                            |
-| Open Navigation Menu                     | Opens the navigation.                                                                                  |
-| Click on Orders link in Navigation Menu  | Clicks on the Orders link in the navigation on the home page.                                           |
-| Click Add Row button                     | Clicks the Add Row button to add a new row to the orders table.                                         |
-| Row: Order Datetime                      | Fills in the new row in the orders table with order datetime.                                           |
-| Row: Customer                            | Fills in the new row in the Customer column of the orders table.                                        |
-| Row: Order Status                        | Fills in the new row in the Order Status column of the orders table.                                    |
-| Row: Store                               | Fills in the new row in the store column of the orders table.                                           |
-| Click Save button                        | Clicks the Save button to save the new row in the orders table.                                         |
-| Search new made row                      | Search for the new made row in the orders table.                                                        |
-| Delete new made row                      | Deletes the new made row in the orders table.                                                           |
-| Click Save button                        | Clicks the Save button to save the new row in the orders table.                                         |
-| Open Navigation Menu                     | Opens the navigation.                                                                                  |
-| Open customer page                       | Opens the create customer page.                                                                        |
-| Search for the created customer          | Searches for the created customer.                                                                      |
-| Click edit button next to searched customer | Clicks the edit button next to the searched customer to open the edit page.                           |
-| Click the delete button                  | Clicks the delete button to delete the customer on the edit page.                                       |
-| Close browser                            | Closes the browser.                                                                                    |
-
-| Keywords                                 | Description                                                                                           |
-|------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Screenshot                               | Captures a screenshot of the current page.                                                             |
-| Open Browser                             | Opens the browser and navigates to the specified URL.                                                  |
-| Input Text                               | Inputs text into a specified field.                                                                    |
-| Click Button                             | Clicks on a specified button.                                                                         |
-| Wait Until Element Is Visible            | Waits until the specified element is visible.                                                          |
-| Execute JavaScript                       | Executes JavaScript code.                                                                             |
-| Select Frame                             | Switches to the specified iframe.                                                                     |
-| Unselect Frame                           | Switches back to the default content from an iframe.                                                   |
-| Sleep                                    | Pauses the test execution for a specified duration.                                                    |
-
-<hr>
-
-> order1.robot
-
-| Test Cases                               | Description                                                                                           |
-|------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Open login page                          | Opens the browser to the login page of the web application.                                            |
-| Input name and password                  | Inputs the username and password on the login page.                                                    |
-| Click login                              | Clicks the login button on the login page and waits for the home page to load.                         |
-| Open Navigation on Home Page             | Opens the navigation menu on the home page.                                                            |
-| Click on Customers link on Home Page     | Clicks on the Customers link in the navigation on the home page.                                        |
-| Open customer page                       | Opens the create customer page.                                                                        |
-| Create new customer                      | Fills in the form to create a new customer.                                                            |
-| Open Navigation Menu                     | Opens the navigation.                                                                                  |
-| Click on Orders link in Navigation Menu  | Clicks on the Orders link in the navigation on the home page.                                           |
-| Click Create button on Orders1 page      | Clicks on the Create button on the Orders1 page.                                                       |
-| Form on ORDERS: Order Datetime           | Fills in the form with order datetime.                                                                 |
-| Form on ORDERS: Customer Id              | Selects the customer from the dropdown menu.                                                           |
-| Form on ORDERS: Order Status             | Fills in the form with order status.                                                                   |
-| Form on ORDERS: Store Id                 | Selects the store from the dropdown menu.                                                              |
-| Click the Create button after filling in the form | Clicks the Create button after filling in the form.                                             |
-| Search the new made order                | Searches for the new made order.                                                                        |
-| Click edit button next to searched order | Clicks the edit button next to the searched order to open the edit page.                               |
-| Click Delete button                      | Clicks the delete button to delete the order.                                                          |
-| Open Navigation Menu                     | Opens the navigation.                                                                                  |
-| Open customer page                       | Opens the create customer page.                                                                        |
-| Search for the created customer          | Searches for the created customer.                                                                      |
-| Click edit button next to searched customer | Clicks the edit button next to the searched customer to open the edit page.                           |
-| Click the delete button                  | Clicks the delete button to delete the customer on the edit page.                                       |
-
-| Keywords                                 | Description                                                                                           |
-|------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Screenshot                               | Captures a screenshot of the current page.                                                             |
-| Open Browser                             | Opens the browser and navigates to the specified URL.                                                  |
-| Input Text                               | Inputs text into a specified field.                                                                    |
-| Input Password                           | Inputs password into a specified field.                                                                |
-| Click Button                             | Clicks on a specified button.                                                                         |
-| Wait Until Page Contains                 | Waits until the specified text appears on the page.                                                    |
-| Wait Until Element Is Visible            | Waits until the specified element is visible.                                                          |
-| Execute JavaScript                       | Executes JavaScript code.                                                                             |
-| Select Frame                             | Switches to the specified iframe.                                                                     |
-| Unselect Frame                           | Switches back to the default content from an iframe.                                                   |
-| Sleep                                    | Pauses the test execution for a specified duration.                                                    |
-| Select From List By Label                | Selects an option from a dropdown menu by its label.                                                   |
+| File name | Description |
+|-----------|-------------|
+| admin.robot | Tries to add products to the website as an admin |
+| order_test.robot | Tries to add a customer, gives him an order, then deletes everything |
+| order1.robot | Does the same as order_test.robot but for a different order page |
 
 ## Week 3 
 >[!Note]
->Deze folder bevat tests voor APEX Office Edit
+> This folder contains tests for APEX Office Edit
 
 > [!IMPORTANT]  
-> Deze tests zijn niet compleet
+> These tests are incomplete
 
+### Apex Office Edit Testing
+
+Welcome to the testing repository for [APEX Office Edit](https://apex.vvanhecke.be/ords/f?p=131:100:9521489571363).
+
+This repository contains Robot Framework tests written in Python for ensuring the functionality and reliability of the website.
+
+#### Prerequisites
+Before running the tests, ensure you have the following installed:
+
+* Python
+* To check if u have python installed run `python --version`
+* Robot Framework
+* Getting Started
+
+#### To execute the tests, follow these steps:
+* Clone this repository to your local machine.
+`git clone https://github.com/mediavilleyt/AOE-RobotFramework`
+* Open command prompt or in Visual Studo Code open the terminal
+* Navigate to the directory where the repository is cloned. ```CD: your/path/here```
+* Run the following command to execute the tests:
+`robot --outputdir results file.robot`
+
+If the above command doesn't work, you can also use `python -m robot -d results file.robot`
+
+
+## Contributors
+
+* Jonas Devadder
+* Keanu Van Acker
+* Jarno Hennes
+* Marie Remory
